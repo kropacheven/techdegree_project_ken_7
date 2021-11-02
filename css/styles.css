@@ -1,3 +1,18 @@
+/*General Styling */
+
+.header {
+  background-color: rgb(168, 168, 241) ;
+  color: white;
+
+}
+
+.navigation {
+  background-color: rgb(68, 68, 128);
+
+}
+
+
+/* Grid layout*/
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
@@ -19,6 +34,9 @@
 .main {
   grid-area: main;
 }
+
+
+/* Media queries*/
 
 @media (min-width: 768px) {
   .grid-container {
