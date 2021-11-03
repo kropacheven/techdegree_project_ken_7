@@ -10,27 +10,33 @@
     <body class='grid-container'>
         <header class='header'>
             <h4>WebAppTM</h4>
-            <div>
-                <!--<img src='svgs/bell.svg' alt='bell svg'> -->
+            <div class='graphics'>
+                <img src='svgs/bell.svg' alt='bell svg'>
             </div>
-            <img>
+            <img src='images/member-1.jpg' alt='Avatar' class='img-header'>
             <h4>Student Name </h4>
         </header>
 
 
         <nav class='navigation'>
-            <a>      
-            <img>
+            <div class='graphics-nav'>
+                <img src='svgs/home.svg' alt='home svg'>
+            </div>    
+            <div class='graphics-nav'>
+                <img src='svgs/bar-chart.svg' alt='bar-chart svg'>
+            </div>
+            <div class='graphics-nav'>
+                <img src='svgs/members.svg' alt='members svg'>
+            </div>
+            <div class='graphics-nav'>
+                <img src='svgs/settings.svg' alt='settings svg'>
+            </div>
+            
         </nav>
 
         <main class='main'>
-            <!-- row -->
-                <!-- col1 -->
-            <!-- row -->
-                <!-- col1 -->    
-                <!-- col2 -->  
             <!-- main dashboard -->
-            <div class="main-header"> // row
+            <div class="main-header"> 
                 <h2 class="headline">Dashboard</h2>
                 <div class="main-header-search">
                 <input type="search" placeholder="Search..." />
@@ -51,25 +57,30 @@
                         <li class="traffic-nav-link">Monthly</li>
                     </ul>
                 </div>
-                <div class="widget-container-full">
+                    <img src='images/traffic.png' class='img-plot'>
+                <!--<div class="widget-container-full"> -->
                     <!-- element line graph will attach to -->
-                    <canvas id="traffic-chart"></canvas>
+                    <!--<canvas id="traffic-chart"></canvas> -->
                 </div>
             </section>
             <!-- bar graph -->
             <section class="daily">
                 <h3>DAILY TRAFFIC</h3>
-                <div class="widget-container-half">
-                    <!-- element bar graph will attach to -->
-                    <canvas id="daily-chart"></canvas>
+                </div>
+                    <img src='images/dayly_traffic.png' class='img-plot'>
+                    <!--<div class="widget-container-full"> -->
+                    <!-- element line graph will attach to -->
+                    <!--<canvas id="traffic-chart"></canvas> -->
                 </div>
             </section>
             <!-- bar graph -->
             <section class="mobile">
                 <h3>MOBILE USERS</h3>
-                <div class="widget-container-mobile">
-                    <!-- element bar graph will attach to -->
-                    <canvas id="mobile-users"></canvas>
+                </div>
+                    <img src='images/mobile_users.png' class='img-plot'>
+                    <!--<div class="widget-container-full"> -->
+                     <!-- element line graph will attach to -->
+                    <!--<canvas id="traffic-chart"></canvas> -->
                 </div>
             </section>
             <div class="social-container">
@@ -78,16 +89,25 @@
                     <!-- inline SVG not included for brevity -->
                 </div>
                 <div class="social-text">
+                    <div class='graphics-nav'>
+                        <img src='svgs/facebook.svg' alt='facebook svg'>
+                    </div>    
                     <p>Facebook</p>
                     <p>10,345</p>
                     <br>
                 </div>
                 <div class="social-text">
+                    <div class='graphics-nav'>
+                        <img src='svgs/instagram.svg' alt='instagram svg'>
+                    </div>    
                     <p>Instagram</p>
                     <p>16,445</p>
                     <br>
                 </div>
                 <div class="social-text">
+                    <div class='graphics-nav'>
+                        <img src='svgs/twitter.svg' alt='twitter svg'>
+                    </div>    
                     <p>Twitter</p>
                     <p>22,189</p>
                     <br>
@@ -101,27 +121,81 @@
             <section class="members">   
                 <h3>NEW MEMBERS</h3>
                 <div class="members-container">
-                    <img src="images/Sept2018Profile.jpg"
-                    class="profile-image">
+                    <img src="images/member-1.jpg"
+                    class="img-main">
                     <div class="members-text">
                         <p>Victoria Chambers</p>
                         <a href="#">victoria.chambers80@example.com</a>
                     </div>
-                    <p>10/15/15</p>
+                    <p>10/15/20</p>
+                 </div>
+                 <div class="members-container">
+                    <img src="images/member-2.jpg"
+                    class="img-main">
+                    <div class="members-text">
+                        <p>Dale Byrd</p>
+                        <a href="#">dale.byrd52@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
+                 </div>
+                 <div class="members-container">
+                    <img src="images/member-3.jpg"
+                    class="img-main">
+                    <div class="members-text">
+                        <p>Dawn Wood</p>
+                        <a href="#">dawn.wood16@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
+                 </div>
+                 <div class="members-container">
+                    <img src="images/member-4.jpg"
+                    class="img-main">
+                    <div class="members-text">
+                        <p>Dan Oliver</p>
+                        <a href="#">dan.oliver82@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
                  </div>
             </section>
                 <!-- recent activity widget --> 
                 <section class="activity">   
                     <h3>RECENT ACTIVITY</h3>
                     <div class="members-container">
-                        <img src="images/Sept2018Profile.jpg"
-                         class="profile-image">
-                    <div class="members-text">
-                        <p>Victoria Chambers</p>
-                        <a href="#">victoria.chambers80@example.com</a>
-                    </div>
-                        <p>10/15/15</p>
-                    </div>
+                        <img src="images/member-1.jpg"
+                        class="img-main">
+                        <div class="members-text">
+                            <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                        </div>
+                        <p>5 hours ago</p>
+                     </div>
+                     <div class="members-container">
+                        <img src="images/member-2.jpg"
+                        class="img-main">
+                        <div class="members-text">
+                            <p>Dale Byrd liked the post Facebook's canges for 2021</p>
+                        </div>
+                        <p>5 hours ago</p>
+                     </div>
+                     <div class="members-container">
+                        <img src="images/member-3.jpg"
+                        class="img-main">
+                        <div class="members-text">
+                            <p>Dawn Wood commented on Facebook's changes for 2021</p>
+                        </div>
+                        <p>5 hours ago</p>
+                     </div>
+                     <div class="members-container">
+                        <img src="images/member-4.jpg"
+                        class="img-main">
+                        <div class="members-text">
+                            <p>Dan Oliver posted WebApp's SEO tips</p>
+                        </div>
+                        <p>1 day ago</p>
+                     </div>                    
+
+
+
+
                  </section>
             <!-- messaging widget -->
             <section class="message">

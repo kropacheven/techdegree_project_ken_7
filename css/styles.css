@@ -12,6 +12,31 @@
 }
 
 
+/*SVG*/
+.graphics {
+  width: 25px;
+}
+
+.graphics-nav {
+  width: 40px;
+}
+
+.img-header {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.img-plot {
+  width: 300px;
+  height: 200px;
+}
+
+.img-main {
+  width: 60px;
+  border-radius: 50%;
+
+}
+
 /* Grid layout*/
 .grid-container {
   display: grid;
