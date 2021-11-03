@@ -60,6 +60,22 @@
   grid-area: main;
 }
 
+/* GRID FlexBox */
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+}
 
 /* Media queries*/
 
