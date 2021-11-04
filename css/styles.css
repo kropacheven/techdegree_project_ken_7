@@ -21,8 +21,13 @@
   width: 40px;
 }
 
+.social-image {
+  width: 40px;
+}
+
 .img-header {
   width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -64,17 +69,31 @@
 
 .header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navigation {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .traffic-nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+}
+
+.facebook-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Media queries*/
