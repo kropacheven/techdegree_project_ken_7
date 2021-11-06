@@ -13,9 +13,26 @@
 
 .navigation {
   background-color: rgb(68, 68, 128);
+  padding: 10px;
 
 }
 
+#traffic-chart, #daily-chart, #mobile-chart {
+  width: 100%;
+}
+
+.members, .activity {
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+}
+
+.button-primary {
+  background: rgb(168, 168, 241);
+  color: white;
+}
 
 /*SVG*/
 .graphics {
@@ -84,8 +101,16 @@
   flex-wrap: wrap;
 }
 
+.alert-banner {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(168, 168, 241);
+  color: white;
+}
+
 .main-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -95,11 +120,18 @@
   justify-content: space-around;
 }
 
-.facebook-container {
+.facebook-container, .instagram-container, .twitter-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 /* Media queries*/
 

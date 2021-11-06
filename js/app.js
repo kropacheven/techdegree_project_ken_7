@@ -12,6 +12,7 @@ to complete</p>
 </div>
 `;
 
+
 alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")) {
