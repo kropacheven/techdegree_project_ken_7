@@ -41,7 +41,8 @@ let trafficData = {
 
 // c. Object literal to set options you want to change for a chart:
 let trafficOptions = {
-    aspectRatio: 2.5,
+    aspectRatio: 2,
+    borderColor: 'rgba(116, 119, 191, .3)',
     animation: {
     duration: 0
     },
@@ -104,7 +105,7 @@ let dailyChart = new Chart(dailyCanvas, {
 });
 
 
-// -------- 2. Doughnut chart ------------ //
+// -------- 3. Doughnut chart ------------ //
 
 // a.Capture HTML canvas by ID:
 const mobileCanvas = document.getElementById("mobile-chart");
@@ -125,6 +126,7 @@ const mobileData = {
 };
 
 const mobileOptions = {
+    aspectRatio: 2,
     plugins: {
     legend: {
     position: 'right',
