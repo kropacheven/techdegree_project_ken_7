@@ -29,9 +29,34 @@ h3 {
   text-align: left;
 }
 
+
+
 .button-primary {
   background: rgb(168, 168, 241);
   color: white;
+}
+
+/* Fonts */
+h3, h4, .headline {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.0rem;
+}
+
+.headline {
+  font-size: 1.3rem;
+}
+
+.traffic-nav li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+}
+
+.alert-banner {
+  font-size: 1.1rem;
+}
+
+p {
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 /*SVG*/
