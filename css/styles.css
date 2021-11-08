@@ -30,11 +30,16 @@ h3 {
 }
 
 
-
 .button-primary {
   background: rgb(168, 168, 241);
   color: white;
 }
+
+#traffic-chart, #daily-chart, #mobile-chart {
+  border-bottom: 1px solid lightgray;
+
+}
+
 
 /* Fonts */
 h3, h4, .headline {
@@ -87,6 +92,14 @@ p {
   width: 60px;
   border-radius: 50%;
 
+}
+
+.graphics, .graphics-nav {
+  fill: white;
+}
+
+.social-image {
+  fill: rgb(68, 68, 128);
 }
 
 /* Grid layout*/

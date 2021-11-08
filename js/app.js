@@ -42,7 +42,11 @@ let trafficData = {
 // c. Object literal to set options you want to change for a chart:
 let trafficOptions = {
     aspectRatio: 2,
-    borderColor: 'rgba(116, 119, 191, .3)',
+    lineTension: 0.5,
+    fill: {
+        target: 'origin',
+        above: 'rgba(116, 119, 191, .3)',   // Area will be filled with color above the origin
+      },
     animation: {
     duration: 0
     },
