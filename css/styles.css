@@ -137,6 +137,12 @@ p {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .item-1 {
+    margin: auto;
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -153,7 +159,6 @@ p {
 .main-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
 }
 
