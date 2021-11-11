@@ -33,6 +33,20 @@ h3 {
 .button-primary {
   background: rgb(168, 168, 241);
   color: white;
+  height: 40px;
+  margin: 10px;
+}
+
+.form-field {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.form-area {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
 }
 
 #traffic-chart, #daily-chart, #mobile-chart {
