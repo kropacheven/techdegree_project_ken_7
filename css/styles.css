@@ -58,6 +58,12 @@ input {
   font-size: 17px;
 }
 
+.facebook-container, .instagram-container, .twitter-container {
+  background-color: rgb(248, 245, 245);
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 7px;
+}
 
 /* Fonts */
 h3, h4, .headline {
@@ -117,7 +123,7 @@ p {
 }
 
 .social-image {
-  fill: rgb(68, 68, 128);
+  fill: rgb(168, 168, 241);
 }
 
 /* Grid layout*/
@@ -179,6 +185,8 @@ p {
 .traffic-nav {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 .facebook-container, .instagram-container, .twitter-container {
@@ -191,6 +199,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 2px;
 }
 
 
