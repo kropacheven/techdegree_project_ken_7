@@ -159,8 +159,16 @@ p {
 }
 
 @media (min-width: 768px) {
+  .header {
+    column-gap: 15px;
+  }
   .item-1 {
-    margin: auto;
+    margin-right: auto;
+    margin-left: 10px;
+    text-align: left;
+  }
+  .item-4 {
+    margin-right: 10px;
   }
 }
 
@@ -169,6 +177,18 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 25px;
+    margin-right: 10px;
+  }
+}
+
+
+
 
 .alert-banner {
   display: flex;
@@ -184,6 +204,7 @@ p {
 }
 
 
+
 .traffic-nav {
   display: flex;
   justify-content: space-around;
@@ -192,6 +213,17 @@ p {
 
 ul .traffic-nav-link {
   flex-grow: 1;
+}
+
+.social-container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .social-container-flex {
+    flex-direction: row;
+  }
 }
 
 .facebook-container, .instagram-container, .twitter-container {
