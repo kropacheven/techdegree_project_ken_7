@@ -5,6 +5,7 @@
 }
 
 
+
 .header {
   background-color: rgb(168, 168, 241) ;
   color: white;
@@ -182,11 +183,15 @@ p {
   align-items: center;
 }
 
+
 .traffic-nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
 
+ul .traffic-nav-link {
+  flex-grow: 1;
 }
 
 .facebook-container, .instagram-container, .twitter-container {
@@ -195,12 +200,21 @@ p {
   align-items: center;
 }
 
+.members {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 2px;
 }
+
 
 
 
