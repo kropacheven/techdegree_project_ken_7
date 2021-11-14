@@ -33,9 +33,10 @@ h3 {
 }
 
 
-.button-primary {
+.button-primary-1 {
   background: rgb(158, 158, 218);
   color: white;
+  width: 90vw;
   height: 40px;
   margin: 10px;
 }
@@ -305,7 +306,39 @@ form {
 }
 
 
+.switch-ios.switch-light {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.switch-ios.switch-light p {
+  flex-basis: 210px;
+}
+
+.switch-ios.switch-light > span {
+  flex-basis: 115px;
+}
+
+.form-field {
+  width: 90vw;
+  text-align: center;
+}
+
+.button-primary-2 {
+  width: 42.5vw;
+  height: 40px;
+  text-align: center;
+  background: rgb(158, 158, 218);
+  color: white;
+  margin: 10px;
+}
+
+.button-disabled {
+  width: 42.5vw;
+  height: 40px;
+  text-align: center;
+}
 
 /* Media queries*/
 
