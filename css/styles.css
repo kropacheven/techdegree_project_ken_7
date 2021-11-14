@@ -7,7 +7,7 @@
 
 
 .header {
-  background-color: rgb(168, 168, 241) ;
+  background-color: rgb(158, 158, 218) ;
   color: white;
 
 }
@@ -32,7 +32,7 @@ h3 {
 
 
 .button-primary {
-  background: rgb(168, 168, 241);
+  background: rgb(158, 158, 218);
   color: white;
   height: 40px;
   margin: 10px;
@@ -124,7 +124,7 @@ p {
 }
 
 .social-image {
-  fill: rgb(168, 168, 241);
+  fill: rgb(158, 158, 218);
 }
 
 /* Grid layout*/
@@ -188,12 +188,10 @@ p {
 }
 
 
-
-
 .alert-banner {
   display: flex;
   justify-content: center;
-  background-color: rgb(168, 168, 241);
+  background-color: rgb(158, 158, 218);
   color: white;
 }
 
@@ -201,9 +199,50 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  column-gap: 10px;
 }
 
+input {
+  height: 59.5px;
+  border: 1px solid lightgray;
+  border-right: 1px solid whitesmoke;
+  background-color: hsl(0, 17%, 98%);
+}
 
+.dash {
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .dash-2 {
+    flex-grow: 6;
+  }
+  .search-1 {
+    width: 590px;
+  } 
+}
+
+@media (min-width: 1024px) {
+  .dash-2 {
+    flex-grow: 9;
+  }
+  .search-1 {
+    width: 848px;
+  } 
+}
+
+@media (min-width: 768px) {
+  .traffic-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .traffic {
+    flex-grow: 1;
+  }
+  .traffic-nav {
+    column-gap: 30px;
+  }
+}
 
 .traffic-nav {
   display: flex;
