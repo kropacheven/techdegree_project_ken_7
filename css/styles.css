@@ -273,22 +273,51 @@ form {
 }
 
 @media (min-width: 768px) {
-  .traffic, .social {
+  .traffic, .social, .main-header, .alert, .members, .activity, .message, .settings {
     grid-column: 1 / span 2;
+  }
+  .social-container-flex {
+    justify-content: space-around;
   }
 }
 
 @media (min-width: 768px) {
-  .daily, .members, .message {
+  .daily {
     grid-column: 1 / span 1;
   }
 }
 
 @media (min-width: 768px) {
+  .mobile {
+    grid-column: 2 / span 1;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .traffic, .social, .main-header, .alert {
+    grid-column: 1 / span 2;
+  }
+  .social-container-flex {
+    justify-content: space-around;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .daily, .members, .message {
+    grid-column: 1 / span 1;
+  }
+}
+
+@media (min-width: 1024px) {
   .mobile, .activity, .settings {
     grid-column: 2 / span 1;
   }
 }
+
+
+
 
 .widget-container-full, .widget-container-half {
   width: 95vw;
