@@ -73,6 +73,8 @@ input {
   margin: 0 0;
 }
 
+
+
 /* Fonts */
 h3, h4, .headline {
   font-family: 'Lato', sans-serif;
@@ -197,9 +199,17 @@ p {
 
 .alert-banner {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 10px;
   background-color: rgb(158, 158, 218);
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.alert-item {
+  margin-right: auto;
 }
 
 .main-header {
@@ -291,11 +301,19 @@ ul .traffic-nav-link {
   .members-container {
     display: flex;
     flex-direction: row;
+    column-gap: 15px;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .members-text {
     margin-right: auto;
   }
 
+}
+
+.activity, .members {
+  margin-right: 25px;
 }
 
 form {
@@ -339,6 +357,45 @@ form {
   height: 40px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .button-primary-2, .button-disabled {
+    width: 44vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-field, .button-primary-1 {
+    width: 45vw;
+  }
+  .button-primary-2, .button-disabled {
+    width: 21vw;
+  }
+}
+
+.switch-ios {
+  margin-left: 15px;
+}
+
+.settings-text {
+  margin-left: 15px;
+}
+
+@media (min-width: 1024px) {
+  .toggles {
+    margin-bottom: 42px;
+  }
+  .switch-ios {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.alert-banner {
+  height: 40px;
+  margin-right: 10px;
+}
+
 
 /* Media queries*/
 
