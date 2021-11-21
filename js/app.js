@@ -171,3 +171,74 @@ send.addEventListener('click', () => {
     alert(`Message successfully sent to: ${user.value}`);
     }
 });
+
+
+// ------------------------------- EXTRA ----------------------- //
+
+// 1. Display at least 2 notifications at the same time when the user clicks the alert icon:
+
+
+// 2. Traffic chart widget (Hourly, Daily, Weekly, Monthly):
+
+
+// 3. Add autocomplete feature for the "Search for a user box":
+
+
+// 4. Use local storage to save the settings:
+
+// Grab buttons: 
+const saveBtn = document.getElementById('save');
+const cancelBtn = document.getElementById('cancel');
+
+//Grab HTML form items:
+const emailSwitch = document.getElementById('email-switch');
+const profileSwitch = document.getElementById('profile-switch');
+const timezone = document.getElementById('timezone'); 
+
+//Checked function for checkboxes
+const getChecked = (checkbox) => {
+    if (checkbox.checked === true) {
+        return 'true';
+    } else {
+        return 'false';
+    }
+};
+
+//Save button click event listener:
+saveBtn.addEventListener('click', (e) => {
+    localStorage.setItem('emailSwitch', getChecked(emailSwitch))
+    localStorage.setItem('profileSwitch', getChecked(profileSwitch))
+    localStorage.setItem('timezone', timezone.value)
+});
+
+//Cancel button click event listener:
+cancelBtn.addEventListener('click', (e) => {
+    emailSwitch.checked = false;
+    profileSwitch.checked = false;
+    timezone.value = 'default';
+    localStorage.clear();
+});
+
+//Load local storage function:
+const loadLocalStorage = () => {
+    if (localStorage.getItem('emailSwitch')) {
+        if (localStorage.getItem('emailSwitch') === 'true') {
+            emailSwitch.checked = true;
+        } else {
+            emailSwitch.checked = false;
+        }
+    }
+    if (localStorage.getItem('profileSwitch')) {
+        if (localStorage.getItem('profileSwitch') === 'true') {
+            profileSwitch.checked = true;
+        } else {
+            profileSwitch.checked = false;
+        }
+    }
+    if (localStorage.getItem('timezone')) {
+        timezone.value = localStorage.getItem('timezone');
+    }
+};
+
+//Local storage call:
+loadLocalStorage();
