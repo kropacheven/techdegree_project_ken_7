@@ -234,6 +234,32 @@ p {
   }
 }
 
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+
+.traffic-nav-label {
+  cursor: pointer;
+  padding: 3px;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked + .traffic-nav-label {
+  background: rgb(171, 211, 171);
+  color: white;
+  border-radius: 25px;
+}
+
+
 
 .alert-banner {
   display: flex;
@@ -313,15 +339,6 @@ textarea {
   }
 }
 
-.traffic-nav {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-ul .traffic-nav-link {
-  flex-grow: 1;
-}
 
 .social-container-flex {
   display: flex;

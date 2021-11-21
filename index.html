@@ -82,12 +82,24 @@
             <section class="traffic" id='traffic-id'>
                 <div class="traffic-header">
                     <h3 class='traffic' >TRAFFIC</h3>
-                    <ul class="traffic-nav">
-                        <li class="traffic traffic-nav-link">Hourly</li>
-                        <li class="traffic traffic-nav-link">Daily</li>
-                        <li class="traffic traffic-nav-link active">Weekly</li>
-                        <li class="traffic traffic-nav-link">Monthly</li>
-                    </ul>
+                    <form class="traffic-nav">
+                        <div class='traffic-nav-time'>
+                            <input type='radio' id='hourly' name='traffic-time' class='radio' checked>
+                            <label for='hourly' class="traffic-nav-label">Hourly</label>
+                        </div>
+                        <div class='traffic-nav-time'>
+                            <input type='radio' id='daily' name='traffic-time' class='radio' checked>
+                            <label for='daily' class="traffic-nav-label">Daily</label>
+                        </div>
+                        <div class='traffic-nav-time'>
+                            <input type='radio' id='weekly' name='traffic-time' class='radio' checked>
+                            <label for='weekly' class="traffic-nav-label">Weekly</label>
+                        </div>
+                        <div class='traffic-nav-time'>
+                            <input type='radio' id='monthly' name='traffic-time' class='radio' checked>
+                            <label for='monthly' class="traffic-nav-label">Monthly</label>
+                        </div>
+                    </form>
                 </div>
                 <div class="widget-container-full" > 
                     <!-- element line graph will attach to -->
