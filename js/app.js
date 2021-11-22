@@ -179,6 +179,16 @@ send.addEventListener('click', () => {
 
 // 1. Display at least 2 notifications at the same time when the user clicks the alert icon:
 
+const bell = document.querySelector(".icon-bell");
+const dropdown = document.querySelector(".dropdown");
+
+const bellClick = bell.addEventListener("click", (e) => {
+    if (dropdown.style.display === '') {
+        dropdown.style.display = 'flex';
+    } else {
+        dropdown.style.display = '';
+    }
+});
 
 // 2. Traffic chart widget (Hourly, Daily, Weekly, Monthly):
 const trafficRadios = document.getElementsByClassName('radio')
