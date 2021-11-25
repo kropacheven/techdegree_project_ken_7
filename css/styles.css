@@ -29,20 +29,19 @@
   flex-direction: column;
   background: whitesmoke;
   top: 3rem;
-  right: -1.5rem;
-  border: 4px solid purple;
+  right: 1.5rem;
+  border: 2px solid rgb(68, 68, 128);
   border-radius: 6px;
-  height: 200px;
-  overflow: scroll;
+  height: 120px;
 }
 
 .dropdown-container {
-  color: purple;
+  color: rgb(68, 68, 128);
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 350px;
-  padding: 1rem;
+  width: 250px;
+  padding: 4px;
   border-bottom: 2px solid grey;
 }
 
