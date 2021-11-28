@@ -12,16 +12,7 @@
 
 }
 
-.icon-bell::after {
-  content: "";
-  position: absolute;
-  width: 0.4rem;
-  height: 0.4rem;
-  top: -0.4rem;
-  right: 0;
-  background: green;
-  border-radius: 50%;
-}
+
 
 .dropdown {
   position: absolute;
@@ -65,14 +56,21 @@
   border-radius: 360px;
   height: 5px;
   width: 5px;
+  position: relative;
+  top: -0.8rem;
 }
 
 .icon-bell {
   transition: transform .5s;
 }
 
+.icon-bell {
+  position: relative;
+}
+
+
 .icon-bell:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .navigation {
@@ -140,8 +138,9 @@ input {
   margin: 0 0;
 }
 
+
 .autocomplete ul {
-  display: block;
+  display: flex;
   flex-direction: column;
   padding: 0;
   margin-left: 10px;
@@ -152,7 +151,6 @@ input {
   list-style: none;
   padding-bottom: 0.5rem;
 }
-
 
 
 /* Fonts */
@@ -268,7 +266,7 @@ p {
 
 @media (min-width: 768px) {
   .header {
-    column-gap: 15px;
+    column-gap: 5px;
   }
   .item-1 {
     margin-right: auto;

@@ -231,14 +231,13 @@ for (let i = 0; i < trafficRadios.length; i++) {
 
 // 3. Add autocomplete feature for the "Search for a user box":
 
-
 const usernames = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
 const userField = document.querySelector('#userField');
 const autocomplete = document.querySelector('.autocomplete');
 const autocompleteUl = document.querySelector('.autocomplete-users');
 let autocompleteChilds = document.querySelectorAll('.autocomplete-users li');
 
-const autocompleteEvent = userField.addEventListener('input', (e) => {
+userField.addEventListener('input', (e) => {
     const userInput = userField.value.toLowerCase();
     for (let i = 0; i < usernames.length; i++) {
         const usernamesLowerCase = usernames[i].toLowerCase();
@@ -256,7 +255,7 @@ const autocompleteEvent = userField.addEventListener('input', (e) => {
     }
 });
 
-const autocompleteFocus = userField.addEventListener('focus', (e) => {
+userField.addEventListener('focus', (e) => {
     if (autocompleteChilds.length === 0) {
         autocomplete.style.display = 'none';
     } else {
@@ -264,7 +263,7 @@ const autocompleteFocus = userField.addEventListener('focus', (e) => {
     }
 });
 
-const autocompleteBlur = userField.addEventListener('blur', (e) => {
+userField.addEventListener('blur', (e) => {
     autocomplete.style.display = 'none';
 });
 
@@ -299,7 +298,7 @@ const removeLi = (name) => {
     }
 };
 
-const autocompleteTypeName = autocompleteUl.addEventListener('click', (e) => {
+autocompleteUl.addEventListener('click', (e) => {
     const name = e.target.innerHTML;
     userField.value = name;
     for (let i = 0; i < autocompleteChilds.length; i++) {
@@ -309,8 +308,6 @@ const autocompleteTypeName = autocompleteUl.addEventListener('click', (e) => {
         } 
     }
 });
-
-
 
 
 // 4. Use local storage to save the settings:
