@@ -228,10 +228,10 @@ for (let i = 0; i < trafficRadios.length; i++) {
     });
 }
 
-
 // 3. Add autocomplete feature for the "Search for a user box":
 
 const usernames = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
+
 const userField = document.querySelector('#userField');
 const autocomplete = document.querySelector('.autocomplete');
 const autocompleteUl = document.querySelector('.autocomplete-users');

@@ -139,6 +139,16 @@ input {
 }
 
 
+.message-user-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.autocomplete {
+  display: block;
+}
+
 .autocomplete ul {
   display: flex;
   flex-direction: column;
