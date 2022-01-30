@@ -1,2 +1,3 @@
 # techdegree_project_ken_7
- fed_td_project7
+See the project online: https://kropacheven.github.io/techdegree_project_ken_7/
+
